@@ -4,6 +4,70 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-LightItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-Italic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-MediumItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-SemiBoldItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("static/Inter_18pt-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
 body {
   min-height: 100vh;
   background: #ffffff;
@@ -130,16 +194,18 @@ body {
 
 .persona-hero__title {
   color: #2d2d2d;
+  font-family: "Inter", sans-serif;
   font-size: clamp(34px, 3vw, 40px);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.2;
   letter-spacing: 0;
 }
 
 .persona-hero__title strong {
+  font-family: "Inter", sans-serif;
   font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .persona-hero__intro {
@@ -244,14 +310,16 @@ body {
 
 .persona-hobbies__title {
   color: #383838;
+  font-family: "Inter", sans-serif;
   font-size: clamp(30px, 3vw, 36px);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.25;
 }
 
 .persona-hobbies__title strong {
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 .persona-hobbies__content p {
@@ -347,15 +415,17 @@ body {
 
 .persona-sport__title {
   color: #383838;
+  font-family: "Inter", sans-serif;
   font-size: clamp(30px, 3vw, 36px);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.25;
   text-align: center;
 }
 
 .persona-sport__title strong {
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 .persona-sport__intro {
@@ -424,15 +494,17 @@ body {
 
 .persona-achievement__title {
   color: #383838;
+  font-family: "Inter", sans-serif;
   font-size: clamp(32px, 3vw, 38px);
   font-style: italic;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.25;
   text-align: center;
 }
 
 .persona-achievement__title strong {
-  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
 }
 
 .persona-achievement__content p {
@@ -486,7 +558,7 @@ body {
   z-index: 1;
   width: min(100% - 10%, 1296px);
   min-height: 350px;
-  margin: -95px auto 0;
+  margin: -27px auto 0;
   border-radius: 24px;
   background: linear-gradient(180deg, rgba(99, 203, 204, 0.38) 0%, rgba(250, 185, 93, 0.38) 100%);
   padding: 48px 24px 54px;
@@ -495,6 +567,7 @@ body {
 
 .persona-ending__title {
   color: #383838;
+  font-family: "Inter", sans-serif;
   font-size: clamp(30px, 3vw, 36px);
   font-style: italic;
   font-weight: 600;
