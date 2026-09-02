@@ -11,7 +11,7 @@ body {
   font-family: "Inter", Arial, sans-serif;
 }
 
-main {
+.inicio-pagina {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -25,7 +25,7 @@ main {
   text-align: center;
 }
 
-h1 {
+.inicio h1 {
   color: #2c2c2c;
   font-family: "Kaisei Opti", Georgia, serif;
   font-size: clamp(52px, 5vw, 72px);
@@ -34,7 +34,7 @@ h1 {
   letter-spacing: 0;
 }
 
-p {
+.inicio p {
   margin-top: 8px;
   color: #737373;
   font-size: clamp(20px, 1.7vw, 24px);
@@ -79,7 +79,7 @@ p {
 }
 
 @media (max-width: 640px) {
-  main {
+  .inicio-pagina {
     padding-inline: 20px;
   }
 
@@ -87,12 +87,12 @@ p {
     margin-top: 0;
   }
 
-  h1 {
+  .inicio h1 {
     font-size: clamp(40px, 13vw, 56px);
     line-height: 1.25;
   }
 
-  p {
+  .inicio p {
     margin-top: 18px;
   }
 
@@ -101,5 +101,96 @@ p {
     align-items: center;
     gap: 18px;
     margin-top: 34px;
+  }
+}
+
+.persona {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #2d2d2d;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+.persona-hero {
+  width: min(100%, 1050px);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(300px, 0.92fr);
+  align-items: center;
+  column-gap: 78px;
+  padding: 64px 24px 70px;
+}
+
+.persona-hero__content {
+  max-width: 610px;
+  padding-top: 9px;
+  text-align: center;
+}
+
+.persona-hero__title {
+  color: #2d2d2d;
+  font-size: clamp(34px, 3vw, 40px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.persona-hero__title strong {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.persona-hero__intro {
+  margin-top: 47px;
+  color: #737373;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.persona-hero__note {
+  margin-top: 27px;
+  color: #737373;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.persona-hero__media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.persona-hero__media img {
+  display: block;
+  width: min(100%, 413px);
+  height: auto;
+}
+
+@media (max-width: 860px) {
+  .persona-hero {
+    grid-template-columns: 1fr;
+    row-gap: 44px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .persona-hero__content {
+    max-width: 640px;
+    margin: 0 auto;
+    padding-top: 0;
+  }
+
+  .persona-hero__intro {
+    margin-top: 30px;
+  }
+
+  .persona-hero__media img {
+    width: min(74vw, 360px);
   }
 }
