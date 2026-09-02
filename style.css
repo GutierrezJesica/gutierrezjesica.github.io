@@ -1135,7 +1135,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #000000;
-  padding: 90px 24px 110px;
+  padding: 90px 24px 90px;
   text-align: center;
 }
 
@@ -1226,12 +1226,12 @@ body {
 
 .profesional-footer {
   width: 100%;
-  min-height: 68px;
+  min-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #51fbc0;
-  padding: 16px 24px;
+  padding: 12px 24px;
   color: #242424;
   font-family: "Inter", sans-serif;
   font-size: 14px;
