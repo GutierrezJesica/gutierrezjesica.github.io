@@ -38,6 +38,14 @@
 
 @font-face {
   font-family: "Inter";
+  src: url("static/Inter_18pt-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
   src: url("static/Inter_18pt-Regular.ttf") format("truetype");
   font-style: normal;
   font-weight: 400;
@@ -769,7 +777,7 @@ body {
 .profesional-profile__title strong {
   color: #f5f5f5;
   font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .profesional-profile__rule {
@@ -877,7 +885,7 @@ body {
   font-family: "Inter", sans-serif;
   font-size: clamp(42px, 4.1vw, 58px);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -946,13 +954,14 @@ body {
   color: #f5f5f5;
   font-family: "Inter", sans-serif;
   font-size: clamp(42px, 4.1vw, 58px);
+  font-style: light;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .profesional-projects-intro__title strong {
   font-family: "Inter", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .profesional-projects-intro__rule {
