@@ -607,6 +607,22 @@ body {
   outline-offset: 4px;
 }
 
+.persona-footer {
+  width: min(100% - 10%, 728px);
+  margin: 40px auto 0;
+  border-top: 1px solid #858585;
+  padding: 14px 0 22px;
+  color: #1f1f1f;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.persona-footer strong {
+  font-weight: 700;
+}
+
 @media (max-width: 860px) {
   .persona-hero {
     grid-template-columns: 1fr;
@@ -775,5 +791,12 @@ body {
 
   .persona-ending__text br {
     display: none;
+  }
+
+  .persona-footer {
+    width: calc(100% - 40px);
+    margin-top: 32px;
+    padding-bottom: 18px;
+    font-size: 13px;
   }
 }
