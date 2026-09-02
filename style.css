@@ -1049,6 +1049,200 @@ body {
   bottom: -38px;
 }
 
+.profesional-projects {
+  width: min(100%, 1150px);
+  margin: 0 auto;
+  padding: 90px 24px 130px;
+  text-align: center;
+}
+
+.profesional-projects__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 32px;
+  text-align: left;
+}
+
+.profesional-project-card {
+  display: block;
+  min-width: 0;
+  border-radius: 20px;
+  background: #1e1e1e;
+  padding: 25px 26px 24px;
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: background-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.profesional-project-card:hover {
+  background: #252525;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+}
+
+.profesional-project-card:focus-visible {
+  outline: 3px solid #51fbc0;
+  outline-offset: 4px;
+}
+
+.profesional-project-card h3 {
+  min-height: 62px;
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profesional-project-card > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 480 / 500;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.profesional-project-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 8px;
+  margin-top: 17px;
+  padding: 0;
+  list-style: none;
+}
+
+.profesional-project-card li {
+  border: 1px solid #51fbc0;
+  border-radius: 999px;
+  padding: 7px 15px;
+  color: #51fbc0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.profesional-project-card:hover li {
+  background: #51fbc0;
+  color: #242424;
+}
+
+.profesional-contact {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  padding: 90px 24px 110px;
+  text-align: center;
+}
+
+.profesional-contact__title {
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(42px, 4.1vw, 58px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profesional-contact__rule {
+  width: 56px;
+  height: 2px;
+  margin-top: 30px;
+  background: #f5f5f5;
+}
+
+.profesional-contact__intro {
+  margin-top: 30px;
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.profesional-contact__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.profesional-contact__social,
+.profesional-contact__cv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 43px;
+  border: 2px solid #51fbc0;
+  border-radius: 5px;
+  color: #51fbc0;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.profesional-contact__social {
+  width: 43px;
+  font-size: 22px;
+}
+
+.profesional-contact__social--behance {
+  font-size: 19px;
+}
+
+.profesional-contact__social--whatsapp {
+  padding: 9px;
+}
+
+.profesional-contact__social--whatsapp svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.profesional-contact__cv {
+  min-width: 176px;
+  padding: 8px 22px;
+  font-size: 16px;
+}
+
+.profesional-contact__social:hover,
+.profesional-contact__cv:hover {
+  background: #51fbc0;
+  color: #242424;
+  transform: translateY(-2px);
+}
+
+.profesional-contact__social:focus-visible,
+.profesional-contact__cv:focus-visible {
+  outline: 3px solid #f5f5f5;
+  outline-offset: 4px;
+}
+
+.profesional-footer {
+  width: 100%;
+  min-height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #51fbc0;
+  padding: 16px 24px;
+  color: #242424;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.profesional-footer strong {
+  font-weight: 700;
+}
+
 @media (max-width: 860px) {
   .persona-hero {
     grid-template-columns: 1fr;
@@ -1347,6 +1541,39 @@ body {
 
   .profesional-quote p br {
     display: none;
+  }
+
+  .profesional-projects {
+    padding: 65px 20px 90px;
+  }
+
+  .profesional-projects__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .profesional-project-card h3 {
+    min-height: auto;
+    font-size: 22px;
+  }
+
+  .profesional-contact {
+    min-height: 430px;
+    padding: 70px 20px 80px;
+  }
+
+  .profesional-contact__intro br {
+    display: none;
+  }
+
+  .profesional-contact__actions {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 36px;
+  }
+
+  .profesional-contact__cv {
+    flex-basis: 100%;
   }
 
   .profesional-quote__mark {
