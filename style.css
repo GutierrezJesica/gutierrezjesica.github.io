@@ -318,6 +318,85 @@ body {
   line-height: 1.35;
 }
 
+.persona-sport {
+  width: min(100%, 1100px);
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(300px, 390px) minmax(0, 1fr);
+  align-items: center;
+  column-gap: 58px;
+  padding: 80px 24px;
+}
+
+.persona-sport__media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.persona-sport__media img {
+  display: block;
+  width: min(100%, 390px);
+  height: auto;
+}
+
+.persona-sport__content {
+  max-width: 760px;
+}
+
+.persona-sport__title {
+  color: #383838;
+  font-size: clamp(30px, 3vw, 36px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.persona-sport__title strong {
+  font-weight: 700;
+}
+
+.persona-sport__intro {
+  margin-top: 32px;
+  color: #858585;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.persona-sport__list {
+  display: grid;
+  gap: 25px;
+  margin-top: 35px;
+  padding: 0;
+  list-style: none;
+}
+
+.persona-sport__list li {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  align-items: start;
+  column-gap: 16px;
+}
+
+.persona-sport__icon {
+  width: 31px;
+  height: 31px;
+  display: block;
+}
+
+.persona-sport__list p {
+  color: #858585;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.persona-sport__list strong {
+  font-weight: 700;
+}
+
 @media (max-width: 860px) {
   .persona-hero {
     grid-template-columns: 1fr;
@@ -399,5 +478,34 @@ body {
 
   .persona-hobby-card {
     width: min(100%, 300px);
+  }
+
+  .persona-sport {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+    padding: 70px 20px;
+  }
+
+  .persona-sport__media img {
+    width: min(82vw, 360px);
+  }
+
+  .persona-sport__content {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .persona-sport__list {
+    gap: 22px;
+    margin-top: 30px;
+  }
+
+  .persona-sport__list li {
+    grid-template-columns: 31px minmax(0, 1fr);
+    column-gap: 12px;
+  }
+
+  .persona-sport__list p {
+    font-size: 15px;
   }
 }
