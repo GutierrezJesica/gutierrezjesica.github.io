@@ -750,6 +750,253 @@ body {
   height: auto;
 }
 
+.profesional-profile {
+  width: min(100%, 1150px);
+  min-height: 470px;
+  margin: 0 auto;
+  padding: 28px 24px 90px;
+}
+
+.profesional-profile__title {
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(42px, 4.1vw, 58px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.profesional-profile__title strong {
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.profesional-profile__rule {
+  width: 56px;
+  height: 2px;
+  margin-top: 30px;
+  background: #f5f5f5;
+}
+
+.profesional-profile__columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 72px;
+  margin-top: 30px;
+}
+
+.profesional-profile__columns p {
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.profesional-skills {
+  position: relative;
+  width: min(100%, 1150px);
+  min-height: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  align-items: center;
+  gap: 65px;
+  padding: 20px 24px 100px;
+}
+
+.profesional-skills__media {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profesional-skills__accent {
+  position: absolute;
+  z-index: 0;
+  top: 64px;
+  left: calc((1150px - 100vw));
+  width: min(25.35vw, 365px);
+  height: min(31.25vw, 450px);
+  border-radius: 0 0 24px 0;
+  background: linear-gradient(90deg, #1d3736 0%, #32846c 100%);
+}
+
+.profesional-skills__media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 300px);
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 4px 6px 7px rgba(0, 0, 0, 0.35);
+}
+
+.profesional-skills__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px 70px;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.profesional-skills__list li {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-width: 0;
+}
+
+.profesional-skills__list img {
+  flex: 0 0 56px;
+  display: block;
+  width: 56px;
+  height: 56px;
+  border-radius: 15px;
+}
+
+.profesional-skills__list span {
+  color: #f5f5f5;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.profesional-technologies {
+  width: min(100%, 1150px);
+  min-height: 520px;
+  margin: 0 auto;
+  padding: 70px 24px 110px;
+  text-align: center;
+}
+
+.profesional-technologies__title {
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(42px, 4.1vw, 58px);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.profesional-technologies__rule {
+  width: 56px;
+  height: 2px;
+  margin: 30px auto 34px;
+  background: #f5f5f5;
+}
+
+.profesional-technologies__tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 13px 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.profesional-technologies__tags li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 2px solid #51fbc0;
+  border-radius: 8px;
+  padding: 8px 28px;
+  color: #51fbc0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.profesional-technologies__tags li:hover {
+  background: #51fbc0;
+  color: #242424;
+  transform: translateY(-2px);
+}
+
+.profesional-technologies__tags li:focus-visible {
+  outline: 3px solid #f5f5f5;
+  outline-offset: 4px;
+}
+
+.profesional-projects-intro {
+  position: relative;
+  width: min(100%, 1150px);
+  min-height: 500px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 390px;
+  align-items: center;
+  gap: 65px;
+  padding: 70px 24px 110px;
+}
+
+.profesional-projects-intro__content {
+  position: relative;
+  z-index: 1;
+}
+
+.profesional-projects-intro__title {
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(42px, 4.1vw, 58px);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.profesional-projects-intro__title strong {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.profesional-projects-intro__rule {
+  width: 56px;
+  height: 2px;
+  margin-top: 30px;
+  background: #f5f5f5;
+}
+
+.profesional-projects-intro__content p {
+  max-width: 730px;
+  margin-top: 30px;
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.profesional-projects-intro__media {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 330px;
+}
+
+.profesional-projects-intro__frame {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  width: 345px;
+  height: 286px;
+  border: 4px solid #51fbc0;
+}
+
+.profesional-projects-intro__media img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 350px);
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
+}
+
 @media (max-width: 860px) {
   .persona-hero {
     grid-template-columns: 1fr;
@@ -956,5 +1203,80 @@ body {
 
   .profesional-hero__media img {
     width: min(78vw, 340px);
+  }
+
+  .profesional-profile {
+    min-height: auto;
+    padding: 44px 20px 76px;
+  }
+
+  .profesional-profile__columns {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .profesional-skills {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 10px 20px 70px;
+  }
+
+  .profesional-skills__media {
+    min-height: 480px;
+  }
+
+  .profesional-skills__accent {
+    top: 30%;
+    left: -20px;
+    width: calc(100% + 20px);
+    height: 250px;
+  }
+
+  .profesional-skills__list {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .profesional-technologies {
+    min-height: auto;
+    padding: 60px 20px 80px;
+  }
+
+  .profesional-technologies__tags {
+    gap: 10px;
+  }
+
+  .profesional-technologies__tags li {
+    min-height: 42px;
+    padding: 8px 18px;
+    font-size: 16px;
+  }
+
+  .profesional-projects-intro {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 20px 80px;
+  }
+
+  .profesional-projects-intro__content {
+    text-align: center;
+  }
+
+  .profesional-projects-intro__rule {
+    margin-inline: auto;
+  }
+
+  .profesional-projects-intro__media {
+    min-height: 300px;
+  }
+
+  .profesional-projects-intro__frame {
+    right: 50%;
+    width: min(88vw, 345px);
+    transform: translateX(50%);
+  }
+
+  .profesional-projects-intro__media img {
+    width: min(88vw, 350px);
   }
 }
