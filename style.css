@@ -194,6 +194,7 @@ body {
   display: block;
   width: min(100%, 453px);
   height: auto;
+  filter: drop-shadow(0 18px 14px rgba(0, 0, 0, 0.16));
 }
 
 .persona-family__panel {
