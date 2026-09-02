@@ -397,6 +397,90 @@ body {
   font-weight: 700;
 }
 
+.persona-achievement {
+  position: relative;
+  width: min(100%, 1440px);
+  min-height: 1500px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 250px 10% 170px;
+}
+
+.persona-achievement__background {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.persona-achievement__content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 560px);
+}
+
+.persona-achievement__title {
+  color: #383838;
+  font-size: clamp(32px, 3vw, 38px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.persona-achievement__title strong {
+  font-weight: 700;
+}
+
+.persona-achievement__content p {
+  margin-top: 31px;
+  color: #858585;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.persona-achievement__photos {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+}
+
+.persona-achievement__photo,
+.persona-achievement__cats {
+  position: absolute;
+  display: block;
+  height: auto;
+  filter: drop-shadow(0 7px 7px rgba(0, 0, 0, 0.16));
+}
+
+.persona-achievement__photo--family {
+  top: 6%;
+  right: 13%;
+  width: min(34vw, 480px);
+}
+
+.persona-achievement__photo--mother {
+  top: 48%;
+  left: 13%;
+  width: min(34vw, 480px);
+}
+
+.persona-achievement__photo--parents {
+  top: 67%;
+  right: 12%;
+  width: min(35vw, 500px);
+}
+
+.persona-achievement__cats {
+  z-index: 2;
+  bottom: 0;
+  left: 10%;
+  width: min(31vw, 440px);
+}
+
 @media (max-width: 860px) {
   .persona-hero {
     grid-template-columns: 1fr;
@@ -507,5 +591,46 @@ body {
 
   .persona-sport__list p {
     font-size: 15px;
+  }
+
+  .persona-achievement {
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    padding: 90px 20px 30px;
+    overflow: hidden;
+  }
+
+  .persona-achievement__background {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .persona-achievement__content {
+    width: min(100%, 620px);
+  }
+
+  .persona-achievement__photos {
+    position: static;
+    display: grid;
+    gap: 30px;
+    width: min(100%, 480px);
+  }
+
+  .persona-achievement__photo,
+  .persona-achievement__photo--family,
+  .persona-achievement__photo--mother,
+  .persona-achievement__photo--parents {
+    position: static;
+    width: min(100%, 420px);
+    margin: 0 auto;
+  }
+
+  .persona-achievement__cats {
+    position: static;
+    width: min(86vw, 400px);
+    margin-top: -10px;
   }
 }
