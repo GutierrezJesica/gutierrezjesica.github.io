@@ -458,12 +458,12 @@ body {
 
 .persona-achievement__photo--family {
   top: 6%;
-  right: 13%;
+  right: 9%;
   width: min(34vw, 480px);
 }
 
 .persona-achievement__photo--mother {
-  top: 48%;
+  top: 43%;
   left: 13%;
   width: min(34vw, 480px);
 }
@@ -479,6 +479,59 @@ body {
   bottom: 0;
   left: 10%;
   width: min(31vw, 440px);
+}
+
+.persona-ending {
+  position: relative;
+  z-index: 1;
+  width: min(100% - 10%, 1296px);
+  min-height: 350px;
+  margin: -95px auto 0;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(99, 203, 204, 0.38) 0%, rgba(250, 185, 93, 0.38) 100%);
+  padding: 48px 24px 54px;
+  text-align: center;
+}
+
+.persona-ending__title {
+  color: #383838;
+  font-size: clamp(30px, 3vw, 36px);
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.persona-ending__subtitle {
+  margin-top: 31px;
+  color: #858585;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.persona-ending__text {
+  margin-top: 31px;
+  color: #858585;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.persona-ending__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 238px;
+  min-height: 36px;
+  margin-top: 31px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #63cbcc 0%, #328b8c 100%);
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.persona-ending__link:focus-visible {
+  outline: 3px solid #328b8c;
+  outline-offset: 4px;
 }
 
 @media (max-width: 860px) {
@@ -632,5 +685,22 @@ body {
     position: static;
     width: min(86vw, 400px);
     margin-top: -10px;
+  }
+
+  .persona-ending {
+    margin-top: -55px;
+    width: calc(100% - 32px);
+    min-height: 310px;
+    border-radius: 20px;
+    padding: 58px 20px 42px;
+  }
+
+  .persona-ending__subtitle,
+  .persona-ending__text {
+    font-size: 16px;
+  }
+
+  .persona-ending__text br {
+    display: none;
   }
 }
