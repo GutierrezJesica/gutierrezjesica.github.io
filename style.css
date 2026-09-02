@@ -36,7 +36,7 @@ h1 {
 
 p {
   margin-top: 8px;
-  color: #8a8a8a;
+  color: #737373;
   font-size: clamp(20px, 1.7vw, 24px);
   font-style: italic;
   font-weight: 400;
@@ -55,7 +55,7 @@ p {
   align-items: center;
   justify-content: center;
   width: 172px;
-  min-height: 40px;
+  min-height: 44px;
   border-radius: 999px;
   background: #252525;
   color: #ffffff;
