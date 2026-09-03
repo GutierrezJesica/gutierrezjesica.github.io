@@ -653,7 +653,7 @@ body {
   align-items: center;
   column-gap: 36px;
   overflow: hidden;
-  padding: 80px max(24px, calc((100% - 1150px))) 90px;
+  padding: 80px 130px;
 }
 
 .profesional-hero__background {
@@ -662,7 +662,6 @@ body {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   object-position: center center;
   pointer-events: none;
 }
@@ -735,11 +734,20 @@ body {
   width: 233px;
   min-height: 36px;
   margin-top: 34px;
+  border: 0;
   border-radius: 999px;
   background: linear-gradient(180deg, #51fbc0 0%, #208e77 100%);
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.profesional-hero__link:hover {
+  border: 2px solid #51fbc0;
+  background: transparent;
+  color: #51fbc0;
+  transform: translateY(-3px);
 }
 
 .profesional-hero__link:focus-visible {
