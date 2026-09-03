@@ -633,6 +633,7 @@ body {
 }
 
 .profesional-page {
+  --profesional-grid-width: min(100%, 1050px);
   background: #242424;
 }
 
@@ -653,7 +654,7 @@ body {
   align-items: center;
   column-gap: 36px;
   overflow: hidden;
-  padding: 80px 130px;
+  padding: 80px 120px;
 }
 
 .profesional-hero__background {
@@ -768,7 +769,7 @@ body {
 }
 
 .profesional-profile {
-  width: min(100%, 1150px);
+  width: var(--profesional-grid-width);
   min-height: 470px;
   margin: 0 auto;
   padding: 28px 24px 90px;
@@ -811,7 +812,7 @@ body {
 
 .profesional-skills {
   position: relative;
-  width: min(100%, 1150px);
+  width: var(--profesional-grid-width);
   min-height: 500px;
   margin: 0 auto;
   display: grid;
@@ -882,7 +883,7 @@ body {
 }
 
 .profesional-technologies {
-  width: min(100%, 1150px);
+  width: var(--profesional-grid-width);
   min-height: 520px;
   margin: 0 auto;
   padding: 70px 24px 110px;
@@ -944,7 +945,7 @@ body {
 
 .profesional-projects-intro {
   position: relative;
-  width: min(100%, 1150px);
+  width: var(--profesional-grid-width);
   min-height: 500px;
   margin: 0 auto;
   display: grid;
@@ -1059,9 +1060,9 @@ body {
 }
 
 .profesional-projects {
-  width: min(100%, 1150px);
+  width: var(--profesional-grid-width);
   margin: 0 auto;
-  padding: 90px 24px 130px;
+  padding: 80px 24px;
   text-align: center;
 }
 
@@ -1139,32 +1140,34 @@ body {
 
 .profesional-persona-invite {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: minmax(0, 2fr) minmax(180px, 1fr);
   align-items: center;
-  gap: 48px;
+  column-gap: 48px;
   min-height: 260px;
   background: #242424;
-  padding: 60px max(24px, calc((100% - 900px) / 2));
+  padding: 60px max(24px, calc((100% - 1050px) / 2)) 100px;
 }
 
 .profesional-persona-invite__content {
   max-width: 650px;
+  justify-self: start;
+  text-align: left;
 }
+
+.profesional-persona-invite h2 strong {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
 
 .profesional-persona-invite h2 {
   color: #f5f5f5;
   font-family: "Inter", sans-serif;
-  font-size: clamp(28px, 3vw, 40px);
+  font-size: clamp(42px, 4.1vw, 58px);
   font-style: normal;
   font-weight: 300;
   line-height: 1.25;
-}
-
-.profesional-persona-invite p {
-  margin-top: 18px;
-  color: #f5f5f5;
-  font-size: 16px;
-  line-height: 1.5;
+  text-align: left;
 }
 
 .profesional-persona-invite a {
@@ -1176,22 +1179,24 @@ body {
   margin-top: 0;
   border: 0;
   border-radius: 999px;
-  background: linear-gradient(180deg, #e9887b 0%, #fab95d 100%);
-  color: #242424;
+  background: linear-gradient(180deg, #63cbcc 0%, #328b8c 100%);
+  color: #ffffff;
   font-size: 16px;
   text-decoration: none;
+  justify-self: center;
+  align-self: center;
   transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
 }
 
 .profesional-persona-invite a:hover {
-  border: 2px solid #e9887b;
+  border: 2px solid #63cbcc;
   background: transparent;
-  color: #e9887b;
+  color: #63cbcc;
   transform: translateY(-3px);
 }
 
 .profesional-persona-invite a:focus-visible {
-  outline: 3px solid #e9887b;
+  outline: 3px solid #63cbcc;
   outline-offset: 4px;
 }
 
@@ -1623,12 +1628,22 @@ body {
     grid-template-columns: 1fr;
     min-height: 230px;
     padding: 50px 20px;
-    text-align: center;
+    text-align: left;
   }
 
   .profesional-persona-invite__content {
     grid-column: auto;
-    margin: 0 auto;
+    margin: 0;
+    justify-self: start;
+    text-align: left;
+  }
+
+  .profesional-persona-invite h2 {
+    text-align: left;
+  }
+
+  .profesional-persona-invite a {
+    justify-self: center;
   }
 
   .profesional-project-card h3 {
