@@ -633,7 +633,7 @@ body {
 }
 
 .profesional-page {
-  --profesional-grid-width: min(100%, 1050px);
+  --profesional-grid-width: min(100%, 1120px);
   background: #242424;
 }
 
@@ -646,7 +646,7 @@ body {
 
 .profesional-hero {
   position: relative;
-  width: 100%;
+  width: var(--profesional-grid-width);
   min-height: 656px;
   margin: 0 auto;
   display: grid;
@@ -654,7 +654,7 @@ body {
   align-items: center;
   column-gap: 36px;
   overflow: hidden;
-  padding: 80px 120px;
+  padding: 80px 24px;
 }
 
 .profesional-hero__background {
@@ -1025,7 +1025,7 @@ body {
 
 .profesional-quote blockquote {
   position: relative;
-  width: min(100%, 1050px);
+  width: var(--profesional-grid-width);
   margin: 0 auto;
   padding: 0 70px;
 }
@@ -1143,9 +1143,11 @@ body {
   grid-template-columns: minmax(0, 2fr) minmax(180px, 1fr);
   align-items: center;
   column-gap: 48px;
+  width: var(--profesional-grid-width);
   min-height: 260px;
+  margin: 0 auto;
   background: #242424;
-  padding: 60px max(24px, calc((100% - 1050px) / 2)) 100px;
+  padding: 60px 24px 100px;
 }
 
 .profesional-persona-invite__content {
@@ -1201,11 +1203,13 @@ body {
 }
 
 .profesional-contact {
+  width: var(--profesional-grid-width);
   min-height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   background: #000000;
   padding: 90px 24px 90px;
   text-align: center;
