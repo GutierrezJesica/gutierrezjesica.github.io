@@ -633,7 +633,7 @@ body {
 }
 
 .profesional-page {
-  --profesional-grid-width: min(100%, 1120px);
+  --profesional-grid-width: min(100%, 1040px);
   background: #242424;
 }
 
@@ -646,15 +646,27 @@ body {
 
 .profesional-hero {
   position: relative;
-  width: var(--profesional-grid-width);
+  width: 100%;
   min-height: 656px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
   align-items: center;
-  column-gap: 36px;
+  column-gap: 42px;
   overflow: hidden;
-  padding: 80px 24px;
+  padding: 72px 24px 82px;
+}
+
+.profesional-hero__inner,
+.profesional-profile,
+.profesional-skills,
+.profesional-technologies,
+.profesional-projects-intro,
+.profesional-projects,
+.profesional-persona-invite,
+.profesional-contact {
+  width: var(--profesional-grid-width);
+  margin-inline: auto;
 }
 
 .profesional-hero__background {
@@ -674,7 +686,9 @@ body {
 }
 
 .profesional-hero__content {
-  max-width: 620px;
+  width: min(100%, 560px);
+  max-width: none;
+  padding-left: 6px;
 }
 
 .profesional-hero__title {
@@ -764,15 +778,14 @@ body {
 
 .profesional-hero__media img {
   display: block;
-  width: min(100%, 384px);
+  width: min(100%, 330px);
   height: auto;
 }
 
 .profesional-profile {
-  width: var(--profesional-grid-width);
   min-height: 470px;
   margin: 0 auto;
-  padding: 28px 24px 90px;
+  padding: 32px 24px 90px;
 }
 
 .profesional-profile__title {
@@ -800,7 +813,7 @@ body {
 .profesional-profile__columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 72px;
+  gap: 48px 56px;
   margin-top: 30px;
 }
 
@@ -812,7 +825,6 @@ body {
 
 .profesional-skills {
   position: relative;
-  width: var(--profesional-grid-width);
   min-height: 500px;
   margin: 0 auto;
   display: grid;
@@ -854,7 +866,7 @@ body {
 .profesional-skills__list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px 70px;
+  gap: 22px 46px;
   align-items: center;
   padding: 0;
   list-style: none;
@@ -883,7 +895,6 @@ body {
 }
 
 .profesional-technologies {
-  width: var(--profesional-grid-width);
   min-height: 520px;
   margin: 0 auto;
   padding: 70px 24px 110px;
@@ -945,7 +956,6 @@ body {
 
 .profesional-projects-intro {
   position: relative;
-  width: var(--profesional-grid-width);
   min-height: 500px;
   margin: 0 auto;
   display: grid;
@@ -982,7 +992,7 @@ body {
 }
 
 .profesional-projects-intro__content p {
-  max-width: 730px;
+  max-width: none;
   margin-top: 30px;
   color: #f5f5f5;
   font-size: 16px;
@@ -1000,7 +1010,7 @@ body {
 .profesional-projects-intro__frame {
   position: absolute;
   top: 0;
-  right: -5px;
+  right: 0;
   width: 345px;
   height: 286px;
   border: 4px solid #51fbc0;
@@ -1010,7 +1020,7 @@ body {
   position: relative;
   z-index: 1;
   display: block;
-  width: min(100%, 350px);
+  width: min(100%, 330px);
   height: auto;
   border-radius: 18px;
   box-shadow: 0 7px 8px rgba(0, 0, 0, 0.3);
@@ -1027,7 +1037,7 @@ body {
   position: relative;
   width: var(--profesional-grid-width);
   margin: 0 auto;
-  padding: 0 70px;
+  padding: 0 64px;
 }
 
 .profesional-quote p {
@@ -1060,7 +1070,6 @@ body {
 }
 
 .profesional-projects {
-  width: var(--profesional-grid-width);
   margin: 0 auto;
   padding: 80px 24px;
   text-align: center;
@@ -1069,7 +1078,7 @@ body {
 .profesional-projects__grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 32px;
+  gap: 28px 24px;
   text-align: left;
 }
 
@@ -1143,7 +1152,6 @@ body {
   grid-template-columns: minmax(0, 2fr) minmax(180px, 1fr);
   align-items: center;
   column-gap: 48px;
-  width: var(--profesional-grid-width);
   min-height: 260px;
   margin: 0 auto;
   background: #242424;
@@ -1151,7 +1159,8 @@ body {
 }
 
 .profesional-persona-invite__content {
-  max-width: 650px;
+  width: min(100%, 620px);
+  max-width: none;
   justify-self: start;
   text-align: left;
 }
@@ -1203,7 +1212,6 @@ body {
 }
 
 .profesional-contact {
-  width: var(--profesional-grid-width);
   min-height: 500px;
   display: flex;
   flex-direction: column;
@@ -1243,7 +1251,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-top: 48px;
+  margin-top: 38px;
 }
 
 .profesional-contact__social,
