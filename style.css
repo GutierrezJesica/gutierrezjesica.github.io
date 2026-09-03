@@ -1137,6 +1137,64 @@ body {
   color: #242424;
 }
 
+.profesional-persona-invite {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 48px;
+  min-height: 260px;
+  background: #242424;
+  padding: 60px max(24px, calc((100% - 900px) / 2));
+}
+
+.profesional-persona-invite__content {
+  max-width: 650px;
+}
+
+.profesional-persona-invite h2 {
+  color: #f5f5f5;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(28px, 3vw, 40px);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+.profesional-persona-invite p {
+  margin-top: 18px;
+  color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.profesional-persona-invite a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 233px;
+  min-height: 36px;
+  margin-top: 0;
+  border: 0;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #e9887b 0%, #fab95d 100%);
+  color: #242424;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.profesional-persona-invite a:hover {
+  border: 2px solid #e9887b;
+  background: transparent;
+  color: #e9887b;
+  transform: translateY(-3px);
+}
+
+.profesional-persona-invite a:focus-visible {
+  outline: 3px solid #e9887b;
+  outline-offset: 4px;
+}
+
 .profesional-contact {
   min-height: 500px;
   display: flex;
@@ -1559,6 +1617,18 @@ body {
   .profesional-projects__grid {
     grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .profesional-persona-invite {
+    grid-template-columns: 1fr;
+    min-height: 230px;
+    padding: 50px 20px;
+    text-align: center;
+  }
+
+  .profesional-persona-invite__content {
+    grid-column: auto;
+    margin: 0 auto;
   }
 
   .profesional-project-card h3 {
