@@ -655,7 +655,7 @@ body {
   align-items: center;
   column-gap: 42px;
   overflow: hidden;
-  padding: 80px 90px;
+  padding: 80px 0px 80px 120px;
 }
 
 .profesional-hero__inner,
