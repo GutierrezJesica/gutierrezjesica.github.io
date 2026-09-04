@@ -633,7 +633,7 @@ body {
 }
 
 .profesional-page {
-  --profesional-grid-width: min(100%, 1040px);
+  --profesional-grid-width: min(1300px, calc(100% - 80px));
   background: #242424;
 }
 
@@ -645,17 +645,15 @@ body {
 }
 
 .profesional-hero {
-  position: relative;
-  width: 100%;
-  max-width: none;
+  width: var(--profesional-grid-width);
   min-height: 656px;
-  margin: 0px auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
   align-items: center;
   column-gap: 42px;
-  overflow: hidden;
-  padding: 80px 80px;
+  margin-inline: auto;
+  padding: 80px 0;
+  background: #242424;
 }
 
 .profesional-hero__inner,
@@ -670,30 +668,14 @@ body {
   margin-inline: auto;
 }
 
-.profesional-hero__background {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  object-position: center center;
-  pointer-events: none;
-}
-
 .profesional-hero__content,
 .profesional-hero__media {
   position: relative;
-  z-index: 1;
 }
 
 .profesional-hero__content {
   width: min(100%, 560px);
   max-width: none;
-  padding-left: 6px;
 }
 
 .profesional-hero__title {
@@ -1403,6 +1385,10 @@ body {
 }
 
 @media (max-width: 640px) {
+  .profesional-page {
+    --profesional-grid-width: 100%;
+  }
+
   .persona-hobbies__content p {
     margin-top: 24px;
   }
@@ -1511,17 +1497,11 @@ body {
   }
 
   .profesional-hero {
+    width: 100%;
     min-height: 100vh;
     grid-template-columns: 1fr;
     row-gap: 42px;
     padding: 58px 20px 72px;
-  }
-
-  .profesional-hero__background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: left top;
   }
 
   .profesional-hero__content {
