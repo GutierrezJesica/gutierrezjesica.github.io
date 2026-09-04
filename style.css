@@ -649,13 +649,13 @@ body {
   width: 100%;
   max-width: none;
   min-height: 656px;
-  margin: 0px;
+  margin: 0px auto;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 0.72fr);
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
   align-items: center;
   column-gap: 42px;
   overflow: hidden;
-  padding: 80px 5%;
+  padding: 80px 90px;
 }
 
 .profesional-hero__inner,
@@ -789,8 +789,8 @@ body {
 
 .profesional-profile {
   min-height: 470px;
-  margin: 0px;
-  padding: 80px 5%;
+  margin: 0px auto;
+  padding: 80px 0px;
 }
 
 .profesional-profile__title {
@@ -831,12 +831,12 @@ body {
 .profesional-skills {
   position: relative;
   min-height: 500px;
-  margin: 0px;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: 320px minmax(0, 1fr);
   align-items: center;
   gap: 65px;
-  padding: 20px 5% 100px;
+  padding: 20px 0px 100px;
 }
 
 .profesional-skills__media {
@@ -873,7 +873,6 @@ body {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px 46px;
   align-items: center;
-  padding: 0;
   list-style: none;
 }
 
@@ -901,8 +900,8 @@ body {
 
 .profesional-technologies {
   min-height: 520px;
-  margin: 0px;
-  padding: 70px 5% 110px;
+  margin: 0px auto;
+  padding: 70px 0px 110px;
   text-align: center;
 }
 
@@ -928,8 +927,7 @@ body {
   justify-content: center;
   gap: 13px 12px;
   max-width: 1100px;
-  margin: 0px;
-  padding: 0;
+  margin: 0px auto;
   list-style: none;
 }
 
@@ -962,12 +960,12 @@ body {
 .profesional-projects-intro {
   position: relative;
   min-height: 500px;
-  margin: 0px;
+  margin: 0px auto;
   display: grid;
   grid-template-columns: minmax(0, 1fr) 390px;
   align-items: center;
   gap: 65px;
-  padding: 70px 5% 110px;
+  padding: 70px 0px 110px;
 }
 
 .profesional-projects-intro__content {
@@ -1035,13 +1033,13 @@ body {
   width: 100%;
   min-height: 176px;
   background: #242424;
-  padding: 30px 5% 34px;
+  padding: 30px 0px 34px;
 }
 
 .profesional-quote blockquote {
   position: relative;
   width: var(--profesional-grid-width);
-  margin: 0px;
+  margin: 0px auto;
   padding: 0 64px;
 }
 
@@ -1075,8 +1073,8 @@ body {
 }
 
 .profesional-projects {
-  margin: 0px;
-  padding: 80px 5%;
+  margin: 0px auto;
+  padding: 80px 0px;
   text-align: center;
 }
 
@@ -1158,9 +1156,9 @@ body {
   align-items: center;
   column-gap: 48px;
   min-height: 260px;
-  margin: 0px;
+  margin: 0px auto;
   background: #242424;
-  padding: 60px 5% 100px;
+  padding: 60px 0px 100px;
 }
 
 .profesional-persona-invite__content {
