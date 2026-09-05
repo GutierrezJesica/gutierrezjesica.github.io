@@ -1610,7 +1610,6 @@ body {
 
   .profesional-hero__link {
     display: flex;
-    margin-inline: auto;
   }
 
   .profesional-hero__media img {
