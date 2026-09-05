@@ -648,7 +648,7 @@ body {
   width: var(--profesional-grid-width);
   min-height: 656px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(300px, 1fr);
+  grid-template-columns: minmax(700px, 1fr) minmax(300px, 1fr);
   align-items: center;
   column-gap: 42px;
   margin-inline: auto;
