@@ -53,7 +53,7 @@
 }
 
 @font-face {
-  font-family: "Inter";
+  background: #000000;
   src: url("static/Inter_18pt-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
@@ -621,6 +621,36 @@ body {
   color: #ffffff;
   font-size: 16px;
   text-decoration: none;
+  transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.persona-ending__link:hover {
+  border: 2px solid #328b8c;
+  background: transparent;
+  color: #328b8c;
+  transform: translateY(-3px);
+}
+
+.persona-ending__link--home {
+  border: 2px solid #328b8c;
+  background: transparent;
+  color: #328b8c;
+}
+
+.persona-ending__link--home:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+.persona-ending__actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 31px;
+}
+
+.persona-ending__actions .persona-ending__link {
+  margin-top: 0;
 }
 
 .persona-ending__link:focus-visible {
@@ -1208,9 +1238,28 @@ body {
   transform: translateY(-3px);
 }
 
+.profesional-persona-invite a.profesional-persona-invite__link--home {
+  border: 2px solid #63cbcc;
+  background: transparent;
+  color: #63cbcc;
+}
+
+.profesional-persona-invite a.profesional-persona-invite__link--home:hover {
+  background: #000000;
+  transform: translateY(-3px);
+}
+
 .profesional-persona-invite a:focus-visible {
   outline: 3px solid #63cbcc;
   outline-offset: 4px;
+}
+
+.profesional-persona-invite__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
 .profesional-contact {
@@ -1503,6 +1552,12 @@ body {
     padding: 58px 20px 42px;
   }
 
+  .persona-ending__actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+
   .persona-ending__subtitle,
   .persona-ending__text {
     font-size: 16px;
@@ -1670,8 +1725,9 @@ body {
     text-align: left;
   }
 
-  .profesional-persona-invite a {
-    justify-self: center;
+  .profesional-persona-invite__actions {
+    flex-direction: column;
+    gap: 18px;
   }
 
   .profesional-project-card h3 {
