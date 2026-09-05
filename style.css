@@ -1381,6 +1381,10 @@ body {
   font-weight: 700;
 }
 
+.footer-update {
+  display: inline;
+}
+
 @media (max-width: 860px) {
   .persona-hero {
     grid-template-columns: 1fr;
@@ -1460,6 +1464,15 @@ body {
 @media (max-width: 640px) {
   .profesional-page {
     --profesional-grid-width: 100%;
+  }
+
+  .footer-update {
+    display: block;
+  }
+
+  .persona-footer strong,
+  .profesional-footer strong {
+    white-space: nowrap;
   }
 
   .persona-hobbies__content p {
