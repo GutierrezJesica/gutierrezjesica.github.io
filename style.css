@@ -699,6 +699,11 @@ body {
   line-height: 1.18;
 }
 
+.profesional-hero__title span {
+  display: block;
+  white-space: nowrap;
+}
+
 .profesional-hero__title strong {
   color: #51fbc0;
   font-family: "Inter", sans-serif;
@@ -1524,14 +1529,19 @@ body {
 
   .profesional-hero__content {
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
   }
 
   .profesional-hero__title {
-    font-size: clamp(36px, 10vw, 52px);
+    font-size: clamp(30px, 8.2vw, 42px);
   }
 
   .profesional-hero__rule {
+    margin-inline: 0;
+  }
+
+  .profesional-hero__link {
+    display: flex;
     margin-inline: auto;
   }
 
@@ -1564,6 +1574,7 @@ body {
     left: -20px;
     width: calc(100% + 20px);
     height: 250px;
+    border-top-right-radius: 24px;
   }
 
   .profesional-skills__list {
@@ -1606,7 +1617,7 @@ body {
 
   .profesional-projects-intro__frame {
     right: 50%;
-    width: min(88vw, 345px);
+    width: min(80vw, 315px);
     transform: translateX(50%);
   }
 
@@ -1642,6 +1653,7 @@ body {
 
   .profesional-persona-invite {
     grid-template-columns: 1fr;
+    row-gap: 44px;
     min-height: 230px;
     padding: 50px 20px;
     text-align: left;
@@ -1677,13 +1689,19 @@ body {
   }
 
   .profesional-contact__actions {
-    flex-wrap: wrap;
-    gap: 12px;
+    display: grid;
+    grid-template-columns: repeat(3, 43px);
+    justify-content: center;
+    column-gap: 16px;
+    row-gap: 12px;
     margin-top: 36px;
   }
 
   .profesional-contact__cv {
-    flex-basis: 100%;
+    width: 161px;
+    min-width: 0;
+    grid-column: 1 / -1;
+    justify-self: center;
   }
 
   .profesional-quote__mark {
