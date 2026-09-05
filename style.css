@@ -987,7 +987,7 @@ body {
 .profesional-projects-intro__media {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: center;
   min-height: 330px;
 }
