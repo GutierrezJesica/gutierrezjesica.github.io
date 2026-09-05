@@ -152,7 +152,10 @@
     </section>
 
     <section class="persona-achievement" aria-labelledby="persona-achievement-title">
-      <img class="persona-achievement__background" src="View/BG-persona.webp" alt="" aria-hidden="true">
+      <picture class="persona-achievement__background">
+        <source media="(max-width: 640px)" srcset="View/BG-persona-mobile.webp">
+        <img src="View/BG-persona.webp" alt="" aria-hidden="true">
+      </picture>
 
       <div class="persona-achievement__content">
         <h2 id="persona-achievement-title" class="persona-achievement__title">¿Mi mayor logro?<br><strong>Ellos...</strong></h2>

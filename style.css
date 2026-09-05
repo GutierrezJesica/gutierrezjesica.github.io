@@ -499,6 +499,14 @@ body {
   pointer-events: none;
 }
 
+.persona-achievement__background img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left top;
+}
+
 .persona-achievement__content {
   position: relative;
   z-index: 1;
@@ -1322,7 +1330,7 @@ body {
 @media (max-width: 860px) {
   .persona-hero {
     grid-template-columns: 1fr;
-    row-gap: 44px;
+    row-gap: 20px;
     padding-top: 56px;
     padding-bottom: 56px;
   }
@@ -1359,8 +1367,11 @@ body {
 
   .persona-family__panel {
     min-height: auto;
+    position: relative;
+    z-index: 0;
+    margin-top: clamp(-150px, -24vw, -110px);
     margin-left: 0;
-    padding: 42px clamp(24px, 7vw, 58px);
+    padding: clamp(150px, 28vw, 210px) clamp(24px, 7vw, 58px) 42px;
   }
 
   .persona-family__panel p {
@@ -1376,6 +1387,10 @@ body {
   .persona-hobbies__content {
     max-width: 680px;
     margin: 0 auto;
+  }
+
+  .persona-hobbies__media {
+    order: -1;
   }
 
   .persona-hobbies__media img {
@@ -1447,7 +1462,6 @@ body {
 
   .persona-achievement__background {
     height: 100%;
-    object-fit: cover;
   }
 
   .persona-achievement__content {
