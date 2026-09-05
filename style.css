@@ -648,7 +648,7 @@ body {
   width: var(--profesional-grid-width);
   min-height: 656px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(400px, 1fr);
+  grid-template-columns: minmax(0, 2fr) minmax(300px, 1fr);
   align-items: center;
   column-gap: 42px;
   margin-inline: auto;
@@ -1499,7 +1499,7 @@ body {
   .profesional-hero {
     width: 100%;
     min-height: 100vh;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     row-gap: 42px;
     padding: 58px 20px 72px;
   }
