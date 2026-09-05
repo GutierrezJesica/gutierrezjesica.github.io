@@ -711,7 +711,7 @@ body {
 
 .profesional-hero__intro,
 .profesional-hero__prompt {
-  max-width: 600px;
+  max-width: 500px;
   color: #f5f5f5;
   font-size: 16px;
   line-height: 1.5;
@@ -765,7 +765,7 @@ body {
 
 .profesional-hero__media img {
   display: block;
-  width: min(100%, 400px);
+  width: 100%;
   height: auto;
 }
 
