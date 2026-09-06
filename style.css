@@ -1746,6 +1746,7 @@ body {
   .profesional-project-card h3 {
     min-height: auto;
     font-size: 22px;
+    margin-bottom: 20px;
   }
 
   .profesional-contact {
