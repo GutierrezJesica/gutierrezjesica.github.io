@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gutierrezjesica.github.io/sitemap.xml
