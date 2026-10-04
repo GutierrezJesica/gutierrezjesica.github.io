@@ -1358,6 +1358,11 @@ body {
 
   .profesional-pricing__grid {
     grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .profesional-pricing__card {
+    width: min(100%, 362px);
   }
 
   .profesional-pricing__card h3 {
