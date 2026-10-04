@@ -148,6 +148,65 @@
 			</ul>
 		</section>
 
+		<section class="profesional-pricing" aria-labelledby="profesional-pricing-title">
+			<div class="profesional-pricing__header">
+				<h2 id="profesional-pricing-title" class="profesional-pricing__title">Tarifario de servicios <span>2026</span></h2>
+				<div class="profesional-pricing__rule" aria-hidden="true"></div>
+			</div>
+			<div class="profesional-pricing__grid">
+				<article class="profesional-pricing__card">
+					<div class="profesional-pricing__badge"><span aria-hidden="true">✦</span> Desarrollo Web | App</div>
+					<h3>Diseño y Desarrollo de Landing Page Optimizada</h3>
+					<p>Página única de conversión. UI/UX, copy básico, formulario, responsive, CMS (WP), Google analytics y 2 rondas de correcciones.</p>
+					<div class="profesional-pricing__tabs" role="tablist" aria-label="Precios por tipo de cliente">
+						<button class="profesional-pricing__tab is-active" type="button" data-price="200.000" data-period="pago único" aria-selected="true">Particulares</button>
+						<button class="profesional-pricing__tab" type="button" data-price="350.000" data-period="pago único" aria-selected="false">PyMes</button>
+						<button class="profesional-pricing__tab" type="button" data-price="500.000" data-period="pago único" aria-selected="false">Empresas</button>
+					</div>
+					<div class="profesional-pricing__price" aria-live="polite">
+						<span class="profesional-pricing__currency">$</span>
+						<span class="profesional-pricing__amount">200.000</span>
+						<span class="profesional-pricing__period">/pago único</span>
+					</div>
+					<button class="profesional-pricing__cta" type="button">Contratar servicio</button>
+				</article>
+
+				<article class="profesional-pricing__card">
+					<div class="profesional-pricing__badge"><span aria-hidden="true">✦</span> Desarrollo Web | App</div>
+					<h3>Diseño y Desarrollo de Landing Page Optimizada</h3>
+					<p>Página única de conversión. UI/UX, copy básico, formulario, responsive, CMS (WP), Google analytics y 2 rondas de correcciones.</p>
+					<div class="profesional-pricing__tabs" role="tablist" aria-label="Precios por tipo de cliente">
+						<button class="profesional-pricing__tab is-active" type="button" data-price="350.000" data-period="pago único" aria-selected="true">Particulares</button>
+						<button class="profesional-pricing__tab" type="button" data-price="500.000" data-period="pago único" aria-selected="false">PyMes</button>
+						<button class="profesional-pricing__tab" type="button" data-price="700.000" data-period="pago único" aria-selected="false">Empresas</button>
+					</div>
+					<div class="profesional-pricing__price" aria-live="polite">
+						<span class="profesional-pricing__currency">$</span>
+						<span class="profesional-pricing__amount">350.000</span>
+						<span class="profesional-pricing__period">/pago único</span>
+					</div>
+					<button class="profesional-pricing__cta" type="button">Contratar servicio</button>
+				</article>
+
+				<article class="profesional-pricing__card">
+					<div class="profesional-pricing__badge"><span aria-hidden="true">✦</span> Desarrollo Web | App</div>
+					<h3>Diseño y Desarrollo de Landing Page Optimizada</h3>
+					<p>Página única de conversión. UI/UX, copy básico, formulario, responsive, CMS (WP), Google analytics y 2 rondas de correcciones.</p>
+					<div class="profesional-pricing__tabs" role="tablist" aria-label="Precios por tipo de cliente">
+						<button class="profesional-pricing__tab is-active" type="button" data-price="500.000" data-period="pago único" aria-selected="true">Particulares</button>
+						<button class="profesional-pricing__tab" type="button" data-price="700.000" data-period="pago único" aria-selected="false">PyMes</button>
+						<button class="profesional-pricing__tab" type="button" data-price="900.000" data-period="pago único" aria-selected="false">Empresas</button>
+					</div>
+					<div class="profesional-pricing__price" aria-live="polite">
+						<span class="profesional-pricing__currency">$</span>
+						<span class="profesional-pricing__amount">500.000</span>
+						<span class="profesional-pricing__period">/pago único</span>
+					</div>
+					<button class="profesional-pricing__cta" type="button">Contratar servicio</button>
+				</article>
+			</div>
+		</section>
+
 		<section id="proyectos" class="profesional-projects-intro" aria-labelledby="profesional-projects-title">
 			<div class="profesional-projects-intro__content">
 				<h2 id="profesional-projects-title" class="profesional-projects-intro__title"><strong>Proyectos 20</strong>25/26</h2>
@@ -255,5 +314,27 @@
 			<p><strong>Diseñado y desarrollado por Gutierrez Jesica</strong><span class="footer-update"> - Ultima actualización 2026</span></p>
 		</footer>
 	</main>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			document.querySelectorAll('.profesional-pricing__card').forEach((card) => {
+				const tabs = card.querySelectorAll('.profesional-pricing__tab');
+				const amount = card.querySelector('.profesional-pricing__amount');
+				const period = card.querySelector('.profesional-pricing__period');
+
+				tabs.forEach((tab) => {
+					tab.addEventListener('click', () => {
+						tabs.forEach((button) => {
+							button.classList.toggle('is-active', button === tab);
+							button.setAttribute('aria-selected', String(button === tab));
+						});
+
+						amount.textContent = tab.dataset.price;
+						period.textContent = `/${tab.dataset.period}`;
+					});
+				});
+			});
+		});
+	</script>
 </body>
 </html>
