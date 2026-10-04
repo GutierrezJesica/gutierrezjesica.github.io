@@ -1326,22 +1326,30 @@ body {
 }
 
 .profesional-pricing__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 26px;
   border: 1px solid #1b4949;
   border-radius: 999px;
-  background: transparent;
-  padding: 14px 18px;
+  background: #fafafa;
+  padding: 12px 18px;
   color: #1b4949;
   font-size: 16px;
   font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .profesional-pricing__cta:hover,
 .profesional-pricing__cta:focus-visible {
   background: #1b4949;
+  border-color: #1b4949;
   color: #fafafa;
+  text-decoration: none;
   transform: translateY(-1px);
 }
 
