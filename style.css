@@ -1296,14 +1296,16 @@ body {
   margin-left: 4px;
 }
 
-.profesional-pricing__maintenance strong {
+.profesional-pricing__maintenance {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  margin-top: 6px;
+}
+.profesional-pricing__maintenance strong {
   color: #1b4949;
   font-size: 18px;
   font-weight: 600;
-  margin-top: 4px;
 }
 
 .profesional-pricing__maintenance small {
