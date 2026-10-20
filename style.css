@@ -1292,31 +1292,23 @@ body {
 .profesional-pricing__period {
   font-size: 12px;
   font-weight: 500;
-  letter-spacing: 0.01em;
   text-transform: lowercase;
-}
-
-.profesional-pricing__maintenance {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
-  gap: 6px;
-  margin-top: 12px;
-  color: #5d6c68;
-  font-size: 13px;
-  line-height: 1.3;
-  text-align: center;
+  margin-left: 4px;
 }
 
 .profesional-pricing__maintenance strong {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
   color: #1b4949;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .profesional-pricing__maintenance small {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
+  margin-left: 4px;
 }
 
 .profesional-pricing__cta {
