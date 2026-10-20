@@ -1201,6 +1201,15 @@ body {
   font-weight: 400;
 }
 
+.profesional-pricing__intro {
+  width: min(100%, 820px);
+  margin: 18px auto 0;
+  color: #242424;
+  font-size: 17px;
+  line-height: 1.55;
+  text-align: center;
+}
+
 .profesional-pricing__rule {
   width: 54px;
   height: 2px;
