@@ -1186,7 +1186,7 @@ body {
 }
 
 .profesional-pricing__header {
-  width: var(--profesional-grid-width);
+  width: min(100%, var(--profesional-grid-width));
   margin-inline: auto;
   text-align: center;
 }
@@ -1222,7 +1222,7 @@ body {
 }
 
 .profesional-pricing__grid {
-  width: var(--profesional-grid-width);
+  width: min(100%, var(--profesional-grid-width));
   margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
