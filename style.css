@@ -1267,35 +1267,6 @@ body {
   line-height: 1.6;
 }
 
-.profesional-pricing__tabs {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 8px;
-  margin-top: 20px;
-  border-radius: 16px;
-  background: #dfe7e4;
-  padding: 5px;
-}
-
-.profesional-pricing__tab {
-  border: 0;
-  border-radius: 10px;
-  background: transparent;
-  padding: 10px 8px;
-  color: #1b4949;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.2;
-  cursor: pointer;
-  transition: background-color 180ms ease, color 180ms ease, box-shadow 180ms ease;
-}
-
-.profesional-pricing__tab.is-active {
-  background: #1b4949;
-  color: #fafafa;
-  box-shadow: 0 8px 16px rgba(27, 73, 73, 0.18);
-}
-
 .profesional-pricing__price {
   display: flex;
   align-items: baseline;
