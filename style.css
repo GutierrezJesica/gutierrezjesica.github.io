@@ -1314,6 +1314,21 @@ body {
   margin-left: 4px;
 }
 
+.profesional-pricing__offer {
+  margin-top: 16px;
+  border: 1px solid #1b4949;
+  border-radius: 6px;
+  background: #d5ffe8;
+  padding: 8px 12px;
+  color: #1b4949;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
 .profesional-pricing__cta {
   display: inline-flex;
   align-items: center;
