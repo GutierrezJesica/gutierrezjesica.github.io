@@ -53,7 +53,7 @@
 }
 
 @font-face {
-  background: #000000;
+  font-family: "Inter";
   src: url("static/Inter_18pt-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
@@ -110,7 +110,7 @@ body {
   text-align: center;
 }
 
-.inicio h1 {
+.inicio h2 {
   color: #2c2c2c;
   font-family: "Kaisei Opti", Georgia, serif;
   font-size: clamp(52px, 5vw, 72px);
@@ -178,7 +178,7 @@ body {
     margin-top: 0;
   }
 
-  .inicio h1 {
+  .inicio h2 {
     font-size: clamp(40px, 13vw, 56px);
     line-height: 1.25;
   }
