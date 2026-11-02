@@ -2129,7 +2129,7 @@ body {
   border-radius: 999px;
   background: linear-gradient(180deg, #51fbc0 0%, #208e77 100%);
   padding: 10px 24px;
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.4;
   text-decoration: none;
@@ -2340,7 +2340,7 @@ body {
   border-radius: 999px;
   background: linear-gradient(180deg, #51fbc0 0%, #208e77 100%);
   padding: 10px 24px;
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.4;
   text-decoration: none;
@@ -2522,10 +2522,6 @@ body {
 
 .servicios-process .servicios-persona-invite h2 {
   color: #242424;
-}
-
-.servicios-process .servicios-persona-invite a:not(.profesional-persona-invite__link--home) {
-  color: #000000;
 }
 
 .servicios-process .servicios-persona-invite a.profesional-persona-invite__link--home {
@@ -2758,7 +2754,7 @@ background: linear-gradient(328deg,rgba(59, 159, 161, 1) 0%, rgba(99, 203, 204, 
   border-radius: 999px;
   background: linear-gradient(180deg, #51fbc0 0%, #208e77 100%);
   padding: 10px 24px;
-  color: #000000;
+  color: #ffffff;
   font-size: 16px;
   line-height: 1.4;
   text-decoration: none;
